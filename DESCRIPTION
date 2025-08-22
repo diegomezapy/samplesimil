@@ -1,0 +1,33 @@
+Package: samplesimil
+Type: Package
+Title: Auditoría de Aleatoriedad por Posiciones y Precisión de la Media con CPF
+Version: 0.4.0
+Authors@R: c(
+    person(given = "Diego", family = "Meza", role = c("aut","cre"),
+           email = "diegomezapy@example.com"),
+    person(given = "Colab", family = "AI", role = "ctb")
+  )
+Description: Para escenarios de censo con cobertura incompleta. Evalúa la aleatoriedad de la
+ selección sobre el orden del marco (posiciones) vía Monte Carlo y provee calculadoras de precisión
+ para la media bajo corrección por población finita (CPF), efecto de diseño y tasa de respuesta.
+ Permite metas en error absoluto o relativo y calcula n objetivo, error alcanzable o nivel de confianza
+ alcanzable dado el tamaño muestral actual.
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.2
+Depends: R (>= 4.1.0)
+Imports:
+    stats,
+    graphics,
+    utils,
+    shiny,
+    bslib,
+    DT,
+    readr,
+    readxl,
+    shinycssloaders,
+    rmarkdown
+Suggests:
+    knitr
+VignetteBuilder: knitr
